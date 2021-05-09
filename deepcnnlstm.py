@@ -1,5 +1,8 @@
 '''
-Reference: https://www.medrxiv.org/content/10.1101/2020.06.18.20134718v1.full.pdf
+Reference:
+
+https://www.medrxiv.org/content/10.1101/2020.06.18.20134718v1.full.pdf
+https://www.sciencedirect.com/science/article/pii/S2352914820305621
 '''
 
 import torch.nn as nn
