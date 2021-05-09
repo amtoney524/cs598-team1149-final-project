@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Training Results and .pt Files
+/TrainingResults
+*.pt
+
 # C extensions
 *.so
 
