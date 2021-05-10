@@ -7,6 +7,10 @@ __pycache__/
 /TrainingResults
 *.pt
 
+# Ignore images
+*.png
+*.jpg
+
 # C extensions
 *.so
 
