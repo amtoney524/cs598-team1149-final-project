@@ -1,5 +1,5 @@
 # cs598-team1149-final-project
-This repository documents the code used to train and evaluate several pre-trained CNNs for classification of COVID-19 from publically available chest X-ray images.
+This repository documents the code used to train and evaluate several pre-trained CNNs for classification of COVID-19 from publicly available chest X-ray images.
 The CNNs supported are ResNet18, ResNet50, SqueezeNet 1.1, DenseNet-121, Inception V3, COVID-Net, and COVID-Net combined with LSTM.
 
 It builds on previous work from the [Deep-COVID](https://github.com/shervinmin/DeepCovid) and [COVID-Net](https://github.com/iliasprc/COVIDNet) papers.
