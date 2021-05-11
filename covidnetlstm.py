@@ -180,7 +180,7 @@ class CovidNetLSTM(nn.Module):
         pepx42 = self.pexp4_2(pepx41 + out_conv4_1x1)
         pepx43 = self.pexp4_3(pepx41 + pepx42 + out_conv4_1x1)
         reshaped = self.reshape(pepx41 + pepx42 + pepx43 + out_conv4_1x1)
-        lstmout, _ = self.lstm(reshaped)
+        lstmout, _ = self.lstm(reshaped)  # Here's the LSTM!
         flattened = self.flatten(lstmout)
 
         fc1out = F.relu(self.fc1(flattened))
@@ -215,10 +215,10 @@ class CovidNetLSTM(nn.Module):
         pepx42 = self.pexp4_2(pepx41)
         pepx43 = self.pexp4_3(pepx41 + pepx42)
         reshaped = self.reshape(pepx41 + pepx42 + pepx43)
-        lstmout, _ = self.lstm(reshaped)
+        lstmout, _ = self.lstm(reshaped)  # LSTM
         flattened = self.flatten(lstmout)
 
         fc1out = F.relu(self.fc1(flattened))
-        #fc2out = F.relu(self.fc2(fc1out))
+        #fc2out = F.relu(self.fc2(fc1out)) # Remove a FC layer from original COVID-Net
         logits = self.classifier(fc1out)
         return logits
